@@ -11,7 +11,7 @@
     tools:context="com.example.yvtc.yvn102502.MainActivity">
 
     <CheckBox
-        android:text="CheckBox"
+        android:text="用餐否"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/checkBox"
@@ -19,7 +19,7 @@
         android:layout_alignParentStart="true" />
 
     <CheckBox
-        android:text="CheckBox"
+        android:text="搭車否"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/checkBox"
@@ -34,7 +34,7 @@
         android:id="@+id/radioGroup">
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="紅"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/checkBox2"
@@ -43,18 +43,27 @@
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="黃"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton5"
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="RadioButton"
+            android:text="綠"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radioButton6"
             android:layout_weight="1" />
     </RadioGroup>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button"
+        android:onClick="click1" />
 
 </RelativeLayout>

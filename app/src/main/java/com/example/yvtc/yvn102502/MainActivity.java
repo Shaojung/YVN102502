@@ -4,6 +4,7 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
@@ -43,5 +44,42 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void click1(View v)
+    {
+        CheckBox chk1, chk2;
+        chk1 = (CheckBox) findViewById(R.id.checkBox);
+        chk2 = (CheckBox) findViewById(R.id.checkBox2);
+
+        if (chk1.isChecked())
+        {
+            Log.d("MYLOG", "要用餐");
+        }
+        else
+        {
+            Log.d("MYLOG", "不用餐");
+        }
+        if (chk2.isChecked())
+        {
+            Log.d("MYLOG", "要搭車");
+        }
+        else
+        {
+            Log.d("MYLOG", "不要搭車");
+        }
+
+        switch (rg.getCheckedRadioButtonId())
+        {
+            case R.id.radioButton4:
+                Log.d("MYLOG", "紅色紀念品");
+                break;
+            case R.id.radioButton5:
+                Log.d("MYLOG", "黃色紀念品");
+                break;
+            case R.id.radioButton6:
+                Log.d("MYLOG", "綠色紀念品");
+                break;
+        }
     }
 }
